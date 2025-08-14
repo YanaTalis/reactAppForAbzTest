@@ -1,0 +1,65 @@
+.post {
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 0 100px;
+  background-color: #f8f8f8;
+  text-align: center;
+
+  &__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__form {
+    max-width: 328px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      max-width: 380px;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__position {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__label {
+    padding-bottom: 3px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: left;
+  }
+
+  &__submit {
+    margin-top: 24px;
+    align-self: center;
+
+    &:disabled {
+      background-color: #b4b4b4;
+      cursor: not-allowed;
+    }
+  }
+}

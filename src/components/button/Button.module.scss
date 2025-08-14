@@ -1,0 +1,25 @@
+.btn {
+  width: 100px;
+  height: 34px;
+  border: none;
+  border-radius: 80px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &--primary {
+    background-color: #f4e041;
+    color: rgba(0, 0, 0, 0.87);
+
+    &:hover {
+      background-color: #ffe302;
+    }
+
+    &:disabled {
+      background-color: #b4b4b4;
+      color: rgba(255, 255, 255, 0.87);
+      cursor: not-allowed;
+    }
+  }
+}
